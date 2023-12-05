@@ -27,12 +27,35 @@ Clash of The Jungle is a tower defense game that offers a unique twist by pittin
 
 4. **Survive and Thrive:** Fight off waves of human invaders and strive to protect the animal kingdom. The more waves you repel, the stronger and more resilient your animal defenders become.
 
+## Player Control 
+
+Player can use these button to control the camera movement on the game 
+| Key          | Function       | Description                 |
+| ------------ | ---------------| ----------------------------|
+| A            | Camera Movement| Move the camera to the left |
+| D            | Camera Movement| Move the camera to the right|
+
+## Supporting Scripts
+
+These are scripts that used to help run the game.
+
+| Script Name           | Description                                          |
+| --------------------- | ---------------------------------------------------- |
+| `BallControl.cs`      | Controls the behavior of a ball, including its initial launch and how it interacts with player objects.  |
+| `GameManager.cs`      | Manages the scores of two players in a game, updates the UI to display the scores, and checks for a win condition where a player reaches a score of 20 to trigger a scene change to the main menu. |
+| `PlayerControls.cs`   | Allows the player object to move up and down within specified bounds using the "moveUp" and "moveDown" keys. The script continuously updates the player's position and velocity based on user input and ensures the player stays within the defined bounds.               |
+| `SceneManagement.cs`  | Allows for the switching of game scenes by providing the name of the target scene to the "ChangeScene" method. It also enables the player to exit the game application using the "QuitApp" method.       |
+| `SideWall.cs`         | Designed to be attached to side walls and serves for scoring by keeping track of when a ball collides with it, identifies the specific wall that was hit, and updates the player's score accordingly. It also can be used to restart the game by sending a message to the ball object to restart the game, possibly after a brief delay, by invoking the "RestartGame" method defined in the "BallControl" script.                 |
+
 
 ## Credits
 
-- Game Programmer: William Wijaya
-  Develop the core gameplay and gameplay experience in the game
-- Game Artist: Vincent Hungadi
-  Making different animal and human character along with its animation
+- Game Programmer: William Wijaya (Develop the core gameplay and gameplay experience in the game)
+- Game Artist: Vincent Hungadi (Making different animal and human character along with its animation)
 - Free Asset Used:
   
+## Contact
+
+If you have any questions or suggestions, you can contact us via email at [williamwijaya010803@gmail.com].
+
+Thank you for using Clash of The Jungle!
